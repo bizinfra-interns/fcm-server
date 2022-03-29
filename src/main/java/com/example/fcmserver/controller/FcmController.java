@@ -1,14 +1,10 @@
-package controller;
+package com.example.fcmserver.controller;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import util.FcmUtil;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import com.example.fcmserver.util.FcmUtil;
 
 @RestController
 @RequiredArgsConstructor

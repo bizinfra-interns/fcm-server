@@ -1,12 +1,12 @@
-import org.assertj.core.api.Assertions;
+package com.example.fcmserver;
+
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import util.FcmUtil;
+import com.example.fcmserver.util.FcmUtil;
 
 import javax.annotation.Resource;
 
-@SpringBootTest
+@SpringBootTest()
 public class FcmUtilTest {
 
     @Resource

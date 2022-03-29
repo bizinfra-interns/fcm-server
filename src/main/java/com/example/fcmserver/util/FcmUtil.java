@@ -1,4 +1,4 @@
-package util;
+package com.example.fcmserver.util;
 
 import com.google.auth.oauth2.GoogleCredentials;
 import com.google.firebase.FirebaseApp;
@@ -6,15 +6,17 @@ import com.google.firebase.FirebaseOptions;
 import com.google.firebase.messaging.*;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
+import java.io.File;
 import java.io.FileInputStream;
 
-@Component
+@Service
 public class FcmUtil {
     public void sendFCM(String tokenId, String title, String content) {
         try {
             ClassPathResource resource = new ClassPathResource("static/google-services.json");
-            FileInputStream refreshToken = (FileInputStream) resource.getInputStream();
+            FileInputStream refreshToken = new FileInputStream(new File(resource.getPath()));
 
             FirebaseOptions options = new FirebaseOptions.Builder()
                     .setCredentials(GoogleCredentials.fromStream(refreshToken))
