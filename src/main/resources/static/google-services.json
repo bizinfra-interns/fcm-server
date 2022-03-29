@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "711665664",
+    "project_id": "fcmtestapp-e505a",
+    "storage_bucket": "fcmtestapp-e505a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:711665664:android:068fa2d9a65b7bbe0890e5",
+        "android_client_info": {
+          "package_name": "com.bizinfra.fcmtest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "711665664-6iaodnsvas4eq2r9hvjbsiu1oem43bkj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9my57wYVankl523Nyvjkpj3rG9vkyBsk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "711665664-6iaodnsvas4eq2r9hvjbsiu1oem43bkj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
